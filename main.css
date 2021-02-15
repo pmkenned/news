@@ -1,0 +1,56 @@
+body {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: Georgia;
+    /*font-family: Helvetica;*/
+    text-align: justify;
+    font-size: 1.0em;
+}
+
+h1 {
+    margin: 0;
+}
+
+article {
+    column-count: 2;
+    margin-bottom: 2rem;
+}
+
+.story-head {
+    font-style: italic;
+}
+
+.story-title {
+    font-style: normal;
+    text-align: left;
+}
+
+.slug-line {
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        column-count: 1;
+    }
+}
+
+@media print {
+    body {
+        font-size: 11pt;
+    }
+    article {
+        page-break-after: always;
+    }
+    a {
+        color: black;
+        /*text-decoration: none;*/
+        /*text-decoration-style: dashed;*/
+    }
+}
